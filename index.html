@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I'm So Sorry My Princess ❤️ | Doraemon's Magical Apology</title>
+  <meta name="description" content="A magical Doraemon themed apology page created with love to make my princess smile again.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Background Elements -->
+  <div class="floating-hearts-container" id="heartsContainer"></div>
+  <div class="sparkles-container" id="sparklesContainer"></div>
+
+  <!-- Music Control Floating Widget -->
+  <div class="music-player" id="musicPlayer">
+    <button class="music-btn" id="musicToggleBtn" title="Play Sweet Romantic Melody">
+      <i class="fa-solid fa-music"></i>
+      <span class="music-wave"></span>
+    </button>
+    <div class="music-tooltip">Click for background music 🎵</div>
+  </div>
+
+  <!-- Header Banner -->
+  <header class="hero-header">
+    <div class="container hero-content">
+      <div class="doraemon-badge">
+        <span class="bell-icon">🔔</span> Doraemon Special Mission: Operation Smile!
+      </div>
+      <h1 class="hero-title">I'm So Sorry, My Princess! <span class="heart-pulse">💖</span></h1>
+      <p class="hero-subtitle">
+        I know I made a mistake and made you upset... But you mean the absolute world to me.
+        Doraemon and I brought magical gadgets to heal your heart! 🌸
+      </p>
+
+      <div class="hero-image-wrapper couple-hero-wrapper">
+        <div class="glow-ring"></div>
+        <div class="hero-avatar-frame">
+          <img src="images/our_selfie.jpg" alt="Us Together" class="hero-couple-img">
+        </div>
+        <div class="hero-doraemon-badge">
+          <img src="images/doraemon_apology.png" alt="Apologetic Doraemon" class="hero-doraemon-small">
+        </div>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#apologyLetter" class="btn btn-primary"><i class="fa-solid fa-envelope-open-text"></i> Read My Letter</a>
+        <a href="#gallery" class="btn btn-secondary"><i class="fa-solid fa-camera-retro"></i> Our Sweet Moments</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Interactive Doraemon Gadgets Section -->
+  <section class="section gadgets-section" id="gadgets">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge"><i class="fa-solid fa-toolbox"></i> 4D Pocket Active</span>
+        <h2>Doraemon's Secret Apology Gadgets ✨</h2>
+        <p>Click on any gadget to unlock its magical healing power!</p>
+      </div>
+
+      <div class="gadgets-grid">
+        <!-- Gadget 1: Time Machine -->
+        <div class="gadget-card" data-gadget="timemachine">
+          <div class="gadget-icon-wrap blue-glow">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </div>
+          <h3>Time Machine</h3>
+          <p>Rewinds time back to before our argument and erases all bad feelings instantly!</p>
+          <button class="btn-gadget">Activate Rewind ⏳</button>
+        </div>
+
+        <!-- Gadget 2: Anywhere Door -->
+        <div class="gadget-card" data-gadget="anywheredoor">
+          <div class="gadget-icon-wrap pink-glow">
+            <i class="fa-solid fa-door-open"></i>
+          </div>
+          <h3>Anywhere Door</h3>
+          <p>Teleports me directly to your side to wrap you in the warmest, tightest hug!</p>
+          <button class="btn-gadget">Open Hug Door 🚪</button>
+        </div>
+
+        <!-- Gadget 3: Memory Bread -->
+        <div class="gadget-card" data-gadget="memorybread">
+          <div class="gadget-icon-wrap yellow-glow">
+            <i class="fa-solid fa-bread-slice"></i>
+          </div>
+          <h3>Memory Bread</h3>
+          <p>Press this bread on our happiest memories to remember how much I adore you!</p>
+          <button class="btn-gadget">Eat Memory Bread 🍞</button>
+        </div>
+
+        <!-- Gadget 4: Translation Gummy -->
+        <div class="gadget-card" data-gadget="lovegummy">
+          <div class="gadget-icon-wrap purple-glow">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <h3>Love Translator Gummy</h3>
+          <p>Translates my foolish words into what my heart actually meant: "I Love You!"</p>
+          <button class="btn-gadget">Taste Gummy 🍬</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Handwritten Heartfelt Apology Letter -->
+  <section class="section letter-section" id="apologyLetter">
+    <div class="container">
+      <div class="letter-paper">
+        <div class="letter-stamp">
+          <img src="images/doraemon_love_letter.png" alt="Love Letter Stamp">
+        </div>
+        <div class="letter-header">
+          <span class="letter-date">To My Precious Love ❤️</span>
+          <h2>My Dearest Princess...</h2>
+        </div>
+
+        <div class="letter-body">
+          <p class="typewriter-text" id="typewriterLetter">
+            I'm writing this from the bottom of my heart. I hate seeing you upset, especially when it's because of me. 
+            You are the sweetest, most beautiful, and most amazing part of my life. Look at that gorgeous smile in our photos—it's my absolute favorite thing in the whole world! 
+            I am truly, deeply sorry for making you feel hurt or annoyed. 
+            I promise to listen to you with all my heart, hold your hand tighter, and treat you like the queen you are every single day.
+            Doraemon told me that love means never giving up on making each other smile. Please forgive me, my cute sunshine? 🥺💖
+          </p>
+        </div>
+
+        <div class="letter-signature">
+          <span>Forever Yours,</span>
+          <h3 class="signature-name">Your Silly Boy 💌</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Romantic Memories Photo Gallery -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge"><i class="fa-solid fa-images"></i> Precious Memories</span>
+        <h2>Our Unforgettable Moments 💕</h2>
+        <p>Every single moment spent holding your hand and walking by your side is my treasure!</p>
+      </div>
+
+      <div class="photo-grid">
+        <!-- Photo Card 1: Selfie -->
+        <div class="polaroid-card">
+          <div class="polaroid-img-wrapper">
+            <img src="images/our_selfie.jpg" alt="Our Beautiful Selfie">
+          </div>
+          <div class="polaroid-caption">
+            <span>"That Smile I Love So Much ✌️❤️"</span>
+            <i class="fa-solid fa-heart pink-heart"></i>
+          </div>
+        </div>
+
+        <!-- Photo Card 2: Holding Hands -->
+        <div class="polaroid-card">
+          <div class="polaroid-img-wrapper">
+            <img src="images/holding_hands.jpg" alt="Holding Hands Tight">
+          </div>
+          <div class="polaroid-caption">
+            <span>"Holding Your Hand Forever 🤝"</span>
+            <i class="fa-solid fa-heart pink-heart"></i>
+          </div>
+        </div>
+
+        <!-- Photo Card 3: Matching Feet -->
+        <div class="polaroid-card">
+          <div class="polaroid-img-wrapper">
+            <img src="images/matching_feet.jpg" alt="Walking Side By Side">
+          </div>
+          <div class="polaroid-caption">
+            <span>"Walking Side-by-Side 👣💖"</span>
+            <i class="fa-solid fa-heart pink-heart"></i>
+          </div>
+        </div>
+
+        <!-- Photo Card 4: Doraemon Anywhere Door -->
+        <div class="polaroid-card">
+          <div class="polaroid-img-wrapper">
+            <img src="images/doraemon_hug.png" alt="Doraemon Hug Door">
+          </div>
+          <div class="polaroid-caption">
+            <span>"Doraemon Hug Door 🚪"</span>
+            <i class="fa-solid fa-heart pink-heart"></i>
+          </div>
+        </div>
+
+        <!-- Photo Card 5: Doraemon Apology -->
+        <div class="polaroid-card">
+          <div class="polaroid-img-wrapper">
+            <img src="images/doraemon_apology.png" alt="Doraemon Begging For Forgiveness">
+          </div>
+          <div class="polaroid-caption">
+            <span>"Doraemon Requesting Your Smile 🥺"</span>
+            <i class="fa-solid fa-heart pink-heart"></i>
+          </div>
+        </div>
+
+        <!-- Photo Card 6: Love Letter -->
+        <div class="polaroid-card">
+          <div class="polaroid-img-wrapper">
+            <img src="images/doraemon_love_letter.png" alt="Magical Love Note">
+          </div>
+          <div class="polaroid-caption">
+            <span>"A Pocket Full of Love 💌"</span>
+            <i class="fa-solid fa-heart pink-heart"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-upload-tip">
+        <i class="fa-solid fa-sparkles"></i> Tip: You can easily add your own real photos here too!
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Love Meter & Reasons -->
+  <section class="section reasons-section">
+    <div class="container">
+      <div class="love-meter-card">
+        <h3><i class="fa-solid fa-gauge-high"></i> Doraemon Love-O-Meter</h3>
+        <p>Measuring my love and regret levels right now...</p>
+
+        <div class="meter-bar-container">
+          <div class="meter-bar" id="meterBar" style="width: 0%;">
+            <span class="meter-text" id="meterText">0%</span>
+          </div>
+        </div>
+
+        <button class="btn btn-primary meter-btn" id="fillMeterBtn">
+          <i class="fa-solid fa-bolt"></i> Charge Love Meter to 1000% ❤️
+        </button>
+      </div>
+
+      <!-- Reasons why I love you generator -->
+      <div class="reasons-card">
+        <h3><i class="fa-solid fa-gift"></i> Reasons Why You Are Unreplaceable</h3>
+        <div class="reason-display" id="reasonDisplay">
+          "Click the button below to draw a sweet reason why I love you so much!"
+        </div>
+        <button class="btn btn-secondary" id="nextReasonBtn">
+          <i class="fa-solid fa-dice"></i> Draw A Sweet Reason 🎲
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ultimate Interactive Forgiveness Question Box -->
+  <section class="section decision-section" id="decision">
+    <div class="container">
+      <div class="decision-card">
+        <div class="decision-doraemon">
+          <span class="doraemon-emoji">🥺👉👈</span>
+        </div>
+        <h2>Will You Forgive Me, My Cutest Princess?</h2>
+        <p>Doraemon and I are waiting for your precious verdict!</p>
+
+        <div class="decision-buttons" id="decisionButtons">
+          <button class="btn btn-yes" id="yesBtn">
+            <i class="fa-solid fa-check-circle"></i> YES, I Forgive You! ❤️
+          </button>
+          <button class="btn btn-no" id="noBtn">
+            NO, Still Nazaz 😤
+          </button>
+        </div>
+
+        <div class="no-counter-msg" id="noCounterMsg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Gadgets & Success -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-icon" id="modalIcon">✨</div>
+      <h3 class="modal-title" id="modalTitle">Gadget Activated!</h3>
+      <div class="modal-body" id="modalBody">Message goes here...</div>
+      <button class="btn btn-primary modal-action-btn" id="modalActionBtn">Yay! Sweet Hug! 💕</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Made with 💖, Doraemon Magic 🔔, and Unlimited Love for My Girl</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
